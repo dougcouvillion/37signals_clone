@@ -2,15 +2,13 @@
         <!-- TODO create the hover over changes to the product links -->
         <!-- TODO put the correct links on the products -->
         <!-- TODO add the javascript to put the current day in the header -->
-        <!-- TODO change the HR tag to the three stars -->
-        <!-- TODO get the exact sizes of the product blocks -->
 <html>
 <head>
     <link rel="stylesheet" href="style/style.css">
     <title>37signals Clone</title>
 </head>
 <body>
-    <div id="header">
+    <div id="header"> <!-- div header is used for the page header: Happy Day and navigation bar -->
         <span id="happy_day">Happy Sunday.</span>
         <ul id="nav_items">
             <li><a href="http://37signals.com">Company blog</a></li>
@@ -19,14 +17,18 @@
             <li><a href="http://37signals.com">System status</a></li>
             <li><a href="http://37signals.com" class="sign_in">Sign in</a></li>
         </ul>
-    </div>
-    <div id="main_content">
+    </div> <!-- end div header -->
+
+    <div id="main_content"> <!-- div main_content contains the real body of the page -->
         <img id="logo" src="images/logo-37s-large.png">
-        <div class="content_block">
+
+        <!-- each section of the body is contained in its own content_block -->
+        <div class="content_block"> <!-- content block for product information -->
             <div class="headline">
                 <h1>Making collaboration productive and enjoyable for people every day.</h1>
                 <h5>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h5>
             </div> <!-- end of headline -->
+            <!-- information about the basecamp product -->
             <a href="http://37signals.com" class="product_link">
                 <div class="product_info" id="product_basecamp">
                     <img src="images/logo-bc.png">
@@ -35,6 +37,7 @@
                     <p class="blurb">Used by millions for project management.</p>
                 </div> <!-- end of product_basecamp -->
             </a>
+            <!-- information about highrise product -->
             <a href="http://37signals.com" class="product_link">
                 <div class="product_info" id="product_highrise">
                     <img src="images/logo-hr.png">
@@ -43,6 +46,7 @@
                     <p class="blurb">Know the people you do business with.</p>
                 </div> <!-- end of product_highrise -->
             </a>
+            <!-- information about the campfire product -->
             <a href="http://37signals.com" class="product_link">
                 <div class="product_info" id="product_campfire">
                     <img src="images/logo-cf.png">
@@ -51,14 +55,16 @@
                     <p class="blurb">Group chat rooms for your business.</p>
                 </div> <!-- end of product_campfire -->
             </a>
-        </div> <!-- end of content_block for products -->
+        </div> <!-- end of content_block for product information -->
+
         <hr>
-        <div class="content_block">
-            <div class="meet">
-                <img src="images/img-customers.png">
+
+        <div class="content_block"> <!-- content block for "meet our customers" -->
+            <div class="meet"> <!-- this div contains the customer photo and a link to a customer page -->
+                <img src="images/arrow-customer.png">
                 <p><a href="http://www.37signals.com/customers">Meet some customers</a></p>
-            </div>
-            <div class="headline">
+            </div> <!-- end div for customer photo -->
+            <div class="headline"> <!-- div for text about customers -->
                 <h2>
                     Millions of entrepreneurs, freelancers, small businesses, and departments inside big
                     organizations rely on our web apps.
@@ -75,9 +81,10 @@
                     their trust &#8211; or your trust &#8211; for granted.
                 </p>
                 <p><img src="images/logos-companies-bw.png"></p>
-            </div> <!-- end div class headline -->
+            </div> <!-- end div for text about customers -->
         </div> <!-- end div content block for millions of entrepreneurs... -->
         <hr>
+
     </div> <!-- end of main_content -->
 </body>
 </html>

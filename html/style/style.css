@@ -1,116 +1,14 @@
+/*--------------------------------*/
+/* set up the generic page styles */
+/*--------------------------------*/
 body {
     font-family: "CrimsonRoman", "Times New Roman", Georgia, serif;
     padding: 30px;
     text-align: center;
     background-color: #fff;
-    /* background: #eee; */
     color: #222;
     font-size: 18px;
     line-height: 1.5em;
-}
-
-p {
-    text-align: left;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 1.3em;
-    color: #666;
-}
-
-#header {
-    text-align: right;
-    padding: 10px 10px 10px 10px;
-    margin: -30px 0 20px 0;
-    color: #999;
-    font-size: 12px;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-}
-
-#header a {
-    color: #336699;
-    text-decoration: none;
-}
-
-#header a:hover {
-    color: #6699cc;
-}
-
-#header a.sign_in {
-    color: #18afe0;
-}
-
-#header a.sign_in:hover {
-    color: #336699;
-}
-
-#happy_day {
-    float: left;
-}
-
-.meet {
-    position: absolute;
-    margin-left: -125px;
-    margin-top: 50px;
-}
-
-div.meet p a {
-    text-align: center;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.3em;
-    color: #369;
-    text-decoration: none;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-}
-
-div.meet p a:hover {
-    color: #6699cc;
-    text-decoration: underline;
-}
-
-.content_block {
-    margin-bottom: 40px;
-}
-
-#main_content {
-    margin: 0 auto 30px;
-    width: 820px;
-    padding: 0;
-}
-
-.product_link {
-    margin: 15px 20px 5px 20px;
-    text-decoration: none;
-}
-
-.product_info {
-    display: inline-block;
-    border: solid 1px #e8e8e8;
-    border-radius: 5px;
-    width: 160px;
-    height: 217px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(rgb(239, 239, 239)));
-    margin-top: 5px;
-    padding: 20px 8px 10px 8px;
-}
-
-#product_basecamp {
-    margin-left: 0;
-}
-
-.headline {
-    width: 825px;
-    margin-left: -20px;
-}
-
-.blurb {
-    color: #222;
-    font-size: 14px;
-    line-height: 1.4em;
-    margin-top: 5px;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    text-align: center;
 }
 
 h1, h2, h3, h4, h5 {
@@ -187,4 +85,156 @@ hr {
     background: white url('../images/img-hr.png') no-repeat scroll 50% 50%;
     color: transparent;
     height: 12px;
+}
+
+p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.3em;
+    color: #666;
+}
+
+/*-----------------------------------------------------*/
+/* The header div is used for the navigation bar items */
+/*-----------------------------------------------------*/
+#header {
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+    margin: -30px 0 20px 0;
+    color: #999;
+    font-size: 12px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+#header a {
+    color: #336699;
+    text-decoration: none;
+}
+
+#header a:hover {
+    color: #6699cc;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* the header link to the sign in is styled differently than the other links in the nav bar */
+/*------------------------------------------------------------------------------------------*/
+#header a.sign_in {
+    color: #18afe0;
+}
+
+#header a.sign_in:hover {
+    color: #336699;
+}
+
+/*----------------------------------------------------------------------*/
+/* the happy_day element is used to display the current day of the week */
+/*----------------------------------------------------------------------*/
+#happy_day {
+    float: left;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/* the meet class of elements are all used to for the "meet our customers" section of the page */
+/*---------------------------------------------------------------------------------------------*/
+.meet {
+    position: absolute;
+    margin-left: -125px;
+    margin-top: 50px;
+    height: 104px;
+    width: 143px;
+    background: url('../images/img-customers.png') no-repeat 0 0;
+}
+
+.meet:hover {
+    background-position: 0 bottom;
+}
+
+div.meet img {
+    margin: 65px 0 0 120px;
+}
+
+div.meet p {
+    margin: -15px 0 0 15px;
+}
+
+div.meet p a {
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.3em;
+    color: #369;
+    text-decoration: none;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+div.meet p a:hover {
+    color: #6699cc;
+    text-decoration: underline;
+}
+
+/*---------------------------------------------------------------------------*/
+/* each major section of the page is contained in it's own div.content_block */
+/*---------------------------------------------------------------------------*/
+.content_block {
+    margin-bottom: 40px;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/* the main_content div is used for the primary content block for the page, which is then sub-divided further */
+/*------------------------------------------------------------------------------------------------------------*/
+#main_content {
+    margin: 0 auto 30px;
+    width: 820px;
+    padding: 0;
+}
+
+/*-----------------------------------------------------------*/
+/* product_link elements are hyperlinks to the product pages */
+/*-----------------------------------------------------------*/
+.product_link {
+    margin: 15px 20px 5px 20px;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* each featured product has it's own div block that's surrounded by the product_link hyperlink */
+/*----------------------------------------------------------------------------------------------*/
+.product_info {
+    display: inline-block;
+    border: solid 1px #e8e8e8;
+    border-radius: 5px;
+    width: 160px;
+    height: 217px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(rgb(239, 239, 239)));
+    margin-top: 5px;
+    padding: 20px 8px 10px 8px;
+}
+
+/*----------------------------------------------------------------*/
+/* product_basecamp is specifically for the Basecamp product info */
+/*----------------------------------------------------------------*/
+#product_basecamp {
+    margin-left: 0;
+}
+
+/*-----------------------------------------*/
+/* each product is described by a headline */
+/*-----------------------------------------*/
+.headline {
+    width: 825px;
+    margin-left: -20px;
+}
+
+/*---------------------------------------------------------------------*/
+/* each product also has a blurb, giving a little more detail about it */
+/*---------------------------------------------------------------------*/
+.blurb {
+    color: #222;
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-top: 5px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
 }
