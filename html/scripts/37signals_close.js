@@ -21,7 +21,7 @@ $(document).ready(function() {
     /* When the user's mouse leaves the product link we need to hide that product information and */
     /* redisplay the original information.                                                        */
     /*--------------------------------------------------------------------------------------------*/
-    $("#link_basecamp").on('mouseout', function() {
+    $(".product_link").on('mouseout', function() {
        $(".headline_product").hide();
        $(this).closest("div").find(".headline").show();
     });

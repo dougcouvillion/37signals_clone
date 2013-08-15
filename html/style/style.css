@@ -237,7 +237,7 @@ div.meet p a:hover {
 /* 8/15/13: Added for mouse over of Baseline. */
 /* set the position of the arrow              */
 /*--------------------------------------------*/
-#basecamp_headline img {
+#arrow_to_headline_basecamp {
     position: absolute;
     margin: -10px 0 0 -170px;
 }
@@ -246,7 +246,7 @@ div.meet p a:hover {
 /* 8/15/13: Added for mouse over of Highrise. */
 /* set the position of the arrow              */
 /*--------------------------------------------*/
-#highrise_headline img {
+#arrow_to_headline_highrise {
     position: absolute;
     margin: -10px 0 0 50px;
 }
@@ -255,7 +255,12 @@ div.meet p a:hover {
 /*-----------------------------------------*/
 .headline {
     width: 825px;
+    height: 163px;
     margin-left: -20px;
+}
+
+.headline_product {
+    height: 163px;
 }
 
 /*---------------------------------------------------------------------*/
