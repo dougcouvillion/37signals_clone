@@ -23,13 +23,29 @@
         <img id="logo" src="images/logo-37s-large.png">
 
         <!-- each section of the body is contained in its own content_block -->
-        <div class="content_block"> <!-- content block for product information -->
+        <div class="content_block" id="products"> <!-- content block for product information -->
+
+            <!-- Headlines for the products -->
             <div class="headline">
-                <h1>Making collaboration productive and enjoyable for people every day.</h1>
+                <h1 class="original_contents">Making collaboration productive and enjoyable for people every day.</h1>
                 <h5>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h5>
             </div> <!-- end of headline -->
+            <!-- headline for the basecamp product -->
+            <div class="headline_product hover_content" data-product="basecamp" id="basecamp_headline">
+                <h1><span>Basecamp</span> is the project management tool you wish you had on your last project.</h1>
+                <p>Are you still managing projects with email? Are you still using Excel for your to-do lists? It&rsquo;s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.</p>
+                <img src="images/arrow-left.png">
+            </div>
+            <!-- headline for the highrise product -->
+            <div class="headline_product hover_content" data-product="basecamp" id="highrise_headline">
+                <h1><span>Highrise</span> remembers the important things about people you&rsquo;d normally forget.</h1>
+                <p>Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</p>
+                <img src="images/arrow-left.png">
+            </div>
+
+            <!-- product teasers -->
             <!-- information about the basecamp product -->
-            <a href="http://37signals.com" class="product_link">
+            <a href="http://37signals.com" class="product_link" id="link_basecamp" data-headline="#basecamp_headline">
                 <div class="product_info" id="product_basecamp">
                     <img src="images/logo-bc.png">
                     <h3><span>Basecamp</span><sup>&reg</sup></h3>
@@ -38,7 +54,7 @@
                 </div> <!-- end of product_basecamp -->
             </a>
             <!-- information about highrise product -->
-            <a href="http://37signals.com" class="product_link">
+            <a href="http://37signals.com" class="product_link" data-headline="#highrise_headline">
                 <div class="product_info" id="product_highrise">
                     <img src="images/logo-hr.png">
                     <h3><span>Highrise</span><sup>&reg</sup></h3>
@@ -86,5 +102,9 @@
         <hr>
 
     </div> <!-- end of main_content -->
+
+    <!-- load our jQuery scripts -->
+    <script src="scripts/jquery-1.10.2.js"></script>
+    <script src="scripts/37signals_close.js"></script>
 </body>
 </html>

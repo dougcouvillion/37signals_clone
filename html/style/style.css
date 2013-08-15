@@ -1,3 +1,6 @@
+/*
+    TODO: Fix the product headlines so they don't jump around when the text is changed
+*/
 /*--------------------------------*/
 /* set up the generic page styles */
 /*--------------------------------*/
@@ -25,6 +28,14 @@ h1 {
     margin-top: 10px;
     letter-spacing: -2px;
     color: #232323;
+}
+
+/*---------------------------------------------*/
+/* 8/15/13: Added for mouseover                */
+/* Change the font size for the mouseover text */
+/*---------------------------------------------*/
+.hover_content h1 {
+    font-size: 46px;
 }
 
 h2 {
@@ -95,6 +106,9 @@ p {
     color: #666;
 }
 
+.hover_content p {
+    font-size: 15px;
+}
 /*-----------------------------------------------------*/
 /* The header div is used for the navigation bar items */
 /*-----------------------------------------------------*/
@@ -219,6 +233,23 @@ div.meet p a:hover {
     margin-left: 0;
 }
 
+/*--------------------------------------------*/
+/* 8/15/13: Added for mouse over of Baseline. */
+/* set the position of the arrow              */
+/*--------------------------------------------*/
+#basecamp_headline img {
+    position: absolute;
+    margin: -10px 0 0 -170px;
+}
+
+/*--------------------------------------------*/
+/* 8/15/13: Added for mouse over of Highrise. */
+/* set the position of the arrow              */
+/*--------------------------------------------*/
+#highrise_headline img {
+    position: absolute;
+    margin: -10px 0 0 50px;
+}
 /*-----------------------------------------*/
 /* each product is described by a headline */
 /*-----------------------------------------*/
